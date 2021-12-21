@@ -1,10 +1,20 @@
 {
-  "name": "palace-component-library",
+  "name": "@crisantolopez/palace-component-library",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "./dist/palace-component-library.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name palace-component-library ./src/components/index.js",
+    "build-wc": "vue-cli-service build --target wc --name palace-component-library ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -39,6 +49,7 @@
     },
     "rules": {}
   },
+  "license" : "ISC",
   "browserslist": [
     "> 1%",
     "last 2 versions",
