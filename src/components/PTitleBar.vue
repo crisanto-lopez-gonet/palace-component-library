@@ -7,7 +7,7 @@
       <v-btn flat @click="openMyGithub()">
         <v-avatar size="42">
           <img
-            src="https://avatars3.githubusercontent.com/u/10973821?s=460&v=4"
+            src="https://img.freepik.com/vector-gratis/avatar-personaje-empresario-aislado_24877-60111.jpg?size=338&ext=jpg"
           />
         </v-avatar>
         <span style="margin-left: 8px">About me: ssthouse</span>
@@ -16,7 +16,7 @@
         <v-btn slot="activator" flat :href="sourceCodeLink">
           <v-avatar size="42">
             <img
-              src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
+              src="https://img.freepik.com/vector-gratis/avatar-personaje-empresario-aislado_24877-60111.jpg?size=338&ext=jpg"
             />
           </v-avatar>
           Source Code
@@ -37,7 +37,7 @@ export default {
     openMyGithub() {
       const a = document.createElement("a");
       a.target = "_blank";
-      a.href = "https://github.com/ssthouse";
+      a.href = "https://github.com/crisanto-lopez-gonet";
       a.click();
     },
     toMainPage() {
